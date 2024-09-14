@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:IRANSans;
+
+}
+html,body{
+  height: 100%;
+}
+body{
+  display: grid;
+  place-items: center;
+  background-image: url(../img/homev_updated1_02-1024x293.jpg);
+  background-size: cover;
+  text-align: center;
+}
+.container{
+  width: 330px;
+  padding: 40px 30px;
+  background: #1e1e1ea4;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #A91D3A,
+  inset -3px -5px 10px -3px #26262673;
+
+}
+.container .p{
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #A91D3A;
+}
+.field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.field:nth-child(2){
+  margin-top: 20px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  padding-right: 45px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background: #1b1b1b;
+  color: #ffffff73;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #2e2e2f,
+              inset -5px -5px 10px #27272773;
+}
+.field input:focus{
+  box-shadow: inset 1px 1px 2px #2e2e2f,
+              inset -1px -1px 2px #29282873;
+}
+.field span{
+  position: absolute;
+  color: #444444;
+  width: 50px;
+  line-height: 50px;
+}
+.forgot{
+  text-align: right;
+  margin: 10px 0 10px 5px;
+}
+.forgot a{
+  font-size: 16px;
+  color: #C73659;
+  text-decoration: none;
+}
+.forgot:hover a{
+  text-decoration: underline;
+}
+button{
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  background: #3a0d16d4;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #C73659;
+  box-shadow: 2px 2px 5px #000000,
+             -5px -5px 10px #00000073;
+}
+button:focus{
+  color: #bb1c1c;
+  box-shadow: inset 2px 2px 5px #000000,
+             inset -5px -5px 10px #0b0b0b73;
+}
+.sign-up{
+  margin: 10px 0;
+  color: #595959;
+  font-size: 16px;
+}
+.sign-up a{
+  color: #C73659;
+  text-decoration: none;
+}
+.sign-up a:hover{
+  text-decoration: underline;
+}

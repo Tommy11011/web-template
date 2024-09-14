@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie and Serial</title>
+    <link href="font/WebFonts/font.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css">
+    <link  href="font/boxicons.css" rel="stylesheet">   
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+  
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header navbar-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">دنیای فیلم و سریال</a> 
+
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">خانه <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> فیلم<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#newewst">جدید ترین</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#pup">پرطرفدار</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">اکشن</a></li>
+                        <li><a href="#">تاریخی</a></li>
+                        <li><a href="#">عاشقانه</a></li>
+                        <li><a href="#">ترسناک</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> سریال<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#newewst">جدید ترین</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#pup">پرطرفدار</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">اکشن</a></li>
+                        <li><a href="#">تاریخی</a></li>
+                        <li><a href="#">عاشقانه</a></li>
+                        <li><a href="#">ترسناک</a></li>
+                    </ul>
+                </li>
+                <li><a href="enter/index.html">ورود</a></li>
+                <li><a href="eshterak/buy.html">خرید اشتراک</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height:400px;">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox" style="height:400px;">
+        <div class="item">
+            <img src="img/homev_updated1_02-1024x293.jpg" alt="...">
+            <div class="carousel-caption">
+                    <h2> اسم فیلم</h2>
+                    <p>درباره فیلم</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/homev_updated1_02-1024x293.jpg" alt="...">
+            <div class="carousel-caption">
+                    <h2> اسم فیلم</h2>
+                    <p>درباره فیلم</p>
+            </div>
+        </div>
+        <div class="item active">
+            <img src="img/homev_updated1_02-1024x293.jpg" alt="...">
+            <div class="carousel-caption">
+                    <h2> اسم فیلم</h2>
+                    <p>درباره فیلم</p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<section id="surprise-user">
+    <div class="container">
+        <p>فیلتر ها:</p>
+        <form class="" style="float: left;">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="delete text-right-fa-item">انگلیسی</label>
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="delete text-right-fa-item">دوبله</label>
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="delete text-right-fa-item">انگلیسی</label>
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="delete text-right-fa-item">کیفیت بالا</label>
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="delete text-right-fa-item">جدیدترین</label>
+                <input class="form-check-input" type="checkbox" id="check">
+                <label for="check text-right-fa-item">قدیمی ترین</label>
+            </div>
+            <input type="button" class="btn btn-danger " value="اعمال ">
+        </form>
+    </div>
+</section>
+<div class="container" style="margin-top:40px;">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="margin-bottom: 40px;">
+            <div class="content-box row">
+                <h2><a id="newewst"><b>جدیدترین ها</b></a> </h2>         
+                </div>
+            <div class="content-box row">
+                <h2><a href="#">Big Cigar</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>بیوگرافی - درام</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        «سیگار بزرگ»، براساس زندگی هوی نیوتون، پایه گذار حزب پلنگ سیاه، است که با کمک یکی از تهیه کنندگان معروف هالیوود و چند سلبریتی دیگر رادیکال برای فرار از محاکمه قضایی به کوبا گریخت.                    </p>
+
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content-box row">
+                <h2><a href="#">Lazareth</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>هیجان انگیز - ماجراجویی</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        لی از خواهرزاده های خود ایموگن و میو، در برابر دنیایی پر از وحشت و بیماری محافظت می کند و آن ها را در جایی دور از دسترس بزرگ می کند. اما از راه رسیدن یک بیگانه آرامش زندگیشان را بر هم می زند.
+                    </p>
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content-box row">
+                <h2><a href="#">Godzola x Kong</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>اکشن - ماجراجویی</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        گودزیلا و کونگِ قدرتمند با تهدید بزرگی پنهان در اعماق سیاره روبرو هستند که موجودیت آن ها و بقای نژاد بشر را تهدید می کند.                    </p>
+
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content-box row">
+                <h2><a href="#">Bodkin</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>کمدی - درام</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        چند سازنده پادکست تصمیم می گیرند درباره گم شدن مرموز سه غریبه در شهر سرسبز کوچکی در ایرلند تحقیق کنند؛ اما کمی که پیش می روند متوجه ماجرایی به مراتب بزرگ تر و عجیب تر از تصورشان می شوند.                    </p>
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content-box row">
+                <h2><a href="#">Dark Matter</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>درام - علمی تخیلی</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        یک متخصص فیزیک نجومی ناگهان وارد نسخه ای متفاوت از زندگی اش می شود و هنگام گذر از زندگی های دیگری که می توانست داشته باشد، قدم به مسیر هولناکی می گذارد تا خانواده واقعی اش را دوباره به دست بیاورد و آن ها را از شر ترسناک ترین دشمنشان یعنی خود او نجات دهد.                    </p>
+
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <div class="content-box row">
+                <h2><a href="#">Abigail</a> </h2>
+                <div class="content-footer">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> تاریخ :2024</a>
+                    <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>وحشت هیجان انگیز</a>
+                </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <a href="#"><img src="img/54-350x196.jpg" class="img-thumbnail"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <p>
+                        گروهی از مجرمان دختر یک تبهکار معروف و قدرتمند را گروگان می گیرند و به عمارت دورافتاده ای می برند، غافل از آنکه در این عمارت با گروگانی گیر افتاده اند که یک دختربچه معمولی نیست.
+                     </p>
+                    <p>
+                        <a href="morepage/index.html" class="btn btn-default"> <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            ادامه مطلب</a>
+                    </p>
+                </div>
+            </div>
+            <nav aria-label="Page navigation" style="display: block;text-align: center;">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="other.html">1</a></li>
+                    <li><a href="other.html">2</a></li>
+                    <li><a href="other.html">3</a></li>
+                    <li><a href="other.html">4</a></li>
+                    <li><a href="other.html">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+            <form class="left-menu-items">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="..." placeholder="جستجو کنید ...">
+                </div>
+            </form>
+            <div class=" left-menu-items">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a id="pup" href="#popular" aria-controls="home" role="tab" data-toggle="tab">پرطرفدار</a></li>
+                    <li role="presentation"><a href="#recent" aria-controls="profile" role="tab" data-toggle="tab">بهترین های هفته</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">پیشنهاد سر دبیر</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="popular">
+                        <ul>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Breaking Bad</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">The 100</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Lost</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Frind</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Bing Bang Theory</a> </h2>
+                                <p>2019</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="recent">
+                        <ul>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Breaking Bad</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">The 100</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Lost</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Frind</a> </h2>
+                                <p>2019</p>
+                            </li>
+                            <li>
+                                <img src="img/54-300x168.jpg" class="img-thumbnail">
+                                <h2><a href="">Bing Bang Theory</a> </h2>
+                                <p>2019</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="messages">
+                        <div style="border:1px solid #ccc;padding-right: 10px;margin-bottom:20px;float:right; ">
+                            <div class="comment-box">
+                                <p class="comment-icon-p m-2"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                <p>سریال لوکی:پس از دزدیده شدن مکعب کیهانی یا تسرکت، لوکی به سرزمین جدیدی می‌رود ولی پس از چند دقیقه توسط سازمان مغایرت‌های زمانی دستگیر می‌شود.</p>
+                            </div>
+                            <div class="comment-box">
+                                <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                <p>سریال لوکی:پس از دزدیده شدن مکعب کیهانی یا تسرکت، لوکی به سرزمین جدیدی می‌رود ولی پس از چند دقیقه توسط سازمان مغایرت‌های زمانی دستگیر می‌شود.</p>
+                            </div>
+                            <div class="comment-box">
+                                <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                <p>سریال لوکی:پس از دزدیده شدن مکعب کیهانی یا تسرکت، لوکی به سرزمین جدیدی می‌رود ولی پس از چند دقیقه توسط سازمان مغایرت‌های زمانی دستگیر می‌شود.</p>
+                            </div>
+                            <div class="comment-box">
+                                <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                <p>سریال لوکی:پس از دزدیده شدن مکعب کیهانی یا تسرکت، لوکی به سرزمین جدیدی می‌رود ولی پس از چند دقیقه توسط سازمان مغایرت‌های زمانی دستگیر می‌شود.</p>
+                            </div>
+                            <div class="comment-box">
+                                <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                <p>سریال لوکی:پس از دزدیده شدن مکعب کیهانی یا تسرکت، لوکی به سرزمین جدیدی می‌رود ولی پس از چند دقیقه توسط سازمان مغایرت‌های زمانی دستگیر می‌شود.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-menu-items last-comments314">
+                <h3>پیشنهاد مخاطبین</h3>
+                <div style="border-top:0;margin-top:0;float:right;">
+
+                    <div class="comment-box">
+                        <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                        <p>سریال 100 یکی از بهترین سریال های علمی تخیلی است که تا بحال ساخته شده.</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                        <p>سریال 100 یکی از بهترین سریال های علمی تخیلی است که تا بحال ساخته شده.</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                        <p>سریال 100 یکی از بهترین سریال های علمی تخیلی است که تا بحال ساخته شده.</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                        <p>سریال 100 یکی از بهترین سریال های علمی تخیلی است که تا بحال ساخته شده.</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="comment-icon-p"><i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                        <p>سریال 100 یکی از بهترین سریال های علمی تخیلی است که تا بحال ساخته شده.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <h3>اشتراک ها</h3>
+                    <div class="footer-product-box">
+                        <h2><a href="#">یک ماهه</a> </h2>
+                        <p>60 ت</p>
+                    </div>
+                    <hr>
+                    <div class="footer-product-box">
+                        <h2><a href="#">دو ماهه</a> </h2>
+                        <p>100 ت</p>
+                    </div>
+                    <hr>
+                    <div class="footer-product-box">
+                        <h2><a href="#">چهار ماهه</a> </h2>
+                        <p>120 ت</p>
+                    </div>
+                    <hr>
+                    <div class="footer-product-box">
+                        <h2><a href="#">شش ماهه</a> </h2>
+                        <p> 200 ت</p>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <h3>SM</h3>
+                    <div class="footer-product-box">
+                        <h2><a href="https://www.gmail.com">همکاری با ما</a> </h2>
+                    </div>
+                    <hr>
+                    <div class="footer-product-box">
+                        <h2><a href="https://www.instagram.com/shahaab_hoosseini/">اینستاگرام</a> </h2>
+                    </div>
+                    <hr>
+                    <div class="footer-product-box">
+                        <h2><a href="https://www.instagram.com/shahaab_hoosseini/">تلگرام</a></h2>
+                    </div>
+                    <hr>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-right">
+                    <p>تمامی حقوق این قالب متعلق به <a href="#">SM (sara mousaei)</a> میباشد !!!</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-left">
+                    <a href="#">خانه</a>
+                    <a href="https://www.instagram.com/shahaab_hoosseini/">شبکه های مجازی</a>
+                    <a href="https://www.instagram.com/shahaab_hoosseini/">تماس با ما</a>
+                    <a href="https://www.instagram.com/shahaab_hoosseini/">درباره ما</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
